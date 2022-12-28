@@ -1,0 +1,459 @@
+/* Color styles */
+
+/* Body
+White #FFFFFF */
+
+/* Primary Brand 
+Iris #4D5AE5 */
+
+/* Dark 
+Navy blue #2E2F42 */
+
+/* Success 
+GREEN #31D0AA */
+
+/* Text 
+SLATE #434455 */
+
+/* Subtle Text 
+LIGHT SLATE #8E8F99 */
+
+/* Accent 
+cornflower #E7E9FC */
+
+/* Light 
+CLOUD #F4F4FD */
+
+:root {
+    /* Colors */
+    --primary-brand-color: #4D5AE5;
+    --title-text-color: #2E2F42;
+    --description-text-color: #434455;
+    --background-light-color: #F4F4FD;
+    --button-border-color: #E7E9FC;
+
+    /* Body */
+    --font-weight-body: 600;
+    --line-height-body: 1.5;
+    --letter-spacing-body: 0.02em;
+
+    /* Logo */
+    --font-weight-logo: 800;
+    --font-size-logo: 18px;
+    --line-height-logo: 1.33;
+    --letter-spacing-logo: 0.03;
+
+    /* Buttons */
+    --font-family-button: Roboto;
+    --font-weight-button: 600;
+    --line-height-button: 1.5;
+    --align-items-button: center;
+    --letter-spacing-button: 0.04em;
+
+    /* Section title */
+    --font-size-section-title: 36px;
+    --line-height-section-title: 1.11;
+}
+
+/* Фон всієї сторінки */
+body {
+    background-color: #ffffff;
+    color: var(--title-text-color);
+
+    font-family: Roboto, sans-serif;
+    font-weight: var(--font-weight-body);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing-body);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.list {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    list-style: none;
+}
+
+.section {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 120px;
+}
+
+/* Header */
+.page-header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Логотип */
+.logo {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--title-text-color);
+    text-decoration: none;
+
+    font-family: Raleway, sans-serif;
+    font-weight: var(--font-weight-logo);
+    font-size: var(--font-size-logo);
+    line-height: var(--line-height-logo);
+    letter-spacing: var(--letter-spacing-logo);
+    text-transform: uppercase;
+}
+
+.first-logo {
+    color: var(--primary-brand-color);
+}
+
+/* Навігація */
+.site-nav {
+    display: flex;
+    margin-left: 76px;
+    padding: 0;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav-title {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    text-decoration: none;
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+
+.nav-title:hover,
+.nav-title:focus {
+    color: #434455;
+}
+
+/* Контакти */
+.contact {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding: 0;
+}
+
+.contact-description {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--description-text-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.contact-description:hover,
+.contact-description:focus {
+    color: var(--primary-brand-color);
+}
+
+.header-nav .contact-description:not(:last-child) {
+    margin-right: 40px;
+}
+
+/* Герой */
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+
+    background-color: var(--title-text-color);
+    color: #FFFFFF;
+}
+
+.hero-description {
+    margin-top: 0;
+    margin-bottom: 48px;
+
+    font-size: 56px;
+    line-height: 1.07;
+}
+/* Buttons */
+
+.button {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 12px 24px;
+    min-width: 69px;
+    height: 48px;
+
+    background-color: #FFFFFF;
+    color: var(--title-text-color);
+
+    cursor: pointer;
+    
+    font-family: var(--font-family-button);
+    font-weight: var(--font-weight-button);
+    line-height: var(--line-height-button);
+    align-items: var(--align-items-button);
+    letter-spacing: var(--letter-spacing-button);
+}
+
+.button-order {
+    min-width: 170px;
+    height: 51px;
+
+    line-height: 1.19;
+
+    padding: 16px 32px;
+}
+
+.button.primary {
+   background-color: var(--primary-brand-color);
+   color: #ffffff; 
+}
+
+.button.secondary {
+    border-color: var(--button-border-color);
+    background-color: var(--background-light-color);
+    color: var(--primary-brand-color);
+}
+
+.secondary:hover,
+.secondary:focus {
+    background-color: var(--primary-brand-color);
+    color: var(--background-light-color);
+}
+
+/* Цінності компанії */
+
+
+.list-values {
+    display: flex;
+    padding-top: 120px;
+    padding-left: 0;
+}
+
+.list-values > .item {
+    width: calc((100% - 24px * 3) / 4);
+    margin-right: 24px;
+}
+
+.list-values > .item:last-child {
+    margin-right: 0;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 72px;
+
+    font-size: var(--font-size-section-title);
+    line-height: var(--line-height-section-title);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.description-name {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+/* Secret name */
+.secret-name {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.description-text,
+.worker-description,
+.filter-name {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: var(--description-text-color);
+
+    font-weight: 400;
+}
+
+/* Можливості компанії */
+img {
+    display: block;
+}
+
+.list-capabilities {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+}
+
+.link {
+    display: block;
+}
+
+/* Команда */
+.team {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    background-color: var(--background-light-color);
+}
+
+.team-name {
+    padding-top: 120px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.team-item {
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.worker {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 32px;
+}
+
+.worker-description {
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding-bottom: 32px;
+}
+
+
+/* Foother */
+.footer {
+    background-color: var(--title-text-color);
+    color: #E7E9FC;
+}
+
+.logo-foother {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-top: 100px;
+
+    color: var(--background-light-color);
+    text-decoration: none;
+
+    font-family: Raleway, sans-serif;
+    font-weight: var(--font-weight-logo);
+    font-size: var(--font-size-logo);
+    line-height: 1.17;
+    letter-spacing: var(--letter-spacing-logo);
+    text-transform: uppercase;
+}
+
+.first-logo {
+    color: var(--primary-brand-color);
+}
+
+.footer-description {
+    width: 264px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+
+    font-weight: 400;
+}
+
+/* Кнопки фільтрів */
+.filtr-button {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 96px;
+}
+
+.button-list > .item {
+    margin-right: 24px;
+}
+
+.button-list > .item:last-child {
+    margin-right: 0;
+}
+
+/* Project cards */
+.project-cards {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-top: 72px;
+    padding-bottom: 120px;
+}
+
+.cards-list > .item {
+    display: block;
+    width: calc((100% - 48px) / 3);
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+.cards-list>.item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.cards-list>.item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-content {
+    padding: 32px 0 32px 16px;
+
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.name {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: var(--title-text-color);
+
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.filter-name {
+    margin-top: 8px;
+}
