@@ -33,7 +33,7 @@ CLOUD #F4F4FD */
     --button-border-color: #E7E9FC;
 
     /* Body */
-    --font-weight-body: 600;
+    --font-weight-body: 500;
     --line-height-body: 1.5;
     --letter-spacing-body: 0.02em;
 
@@ -180,7 +180,20 @@ body {
 
     background-color: var(--title-text-color);
     color: #FFFFFF;
+
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, 
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 
 .hero-description {
     margin-top: 0;
@@ -189,6 +202,7 @@ body {
     font-size: 56px;
     line-height: 1.07;
 }
+
 /* Buttons */
 
 .button {
@@ -238,7 +252,16 @@ body {
 }
 
 /* Цінності компанії */
+.section-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 72px;
 
+    font-size: var(--font-size-section-title);
+    line-height: var(--line-height-section-title);
+    text-align: center;
+    text-transform: capitalize;
+}
 
 .list-values {
     display: flex;
@@ -255,19 +278,22 @@ body {
     margin-right: 0;
 }
 
-.section-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 72px;
+.actions {
+    display: flex;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-light-color);
+    border-radius: 4px;
+}
 
-    font-size: var(--font-size-section-title);
-    line-height: var(--line-height-section-title);
-    text-align: center;
-    text-transform: capitalize;
+.icon {
+    width: 64px;
+    height: 64px;
 }
 
 .description-name {
-    margin-top: 0;
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 
@@ -330,6 +356,7 @@ img {
 .team-item {
     background-color: #ffffff;
     text-align: center;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -342,9 +369,36 @@ img {
 .worker-description {
     margin-top: 8px;
     margin-bottom: 0;
-    padding-bottom: 32px;
+    margin-bottom: 8px;
 }
 
+.tralind-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 32px 16px;
+}
+
+.tralind-position {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-brand-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.team-list > .tralind-link {
+    display: block;
+}
+
+.tralind-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Customers */
+.section-name {
+    padding-top: 130px;
+}
 
 /* Foother */
 .footer {
