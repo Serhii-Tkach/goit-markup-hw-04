@@ -6,6 +6,9 @@ White #FFFFFF */
 /* Primary Brand 
 Iris #4D5AE5 */
 
+/* Pressed state
+OCEAN #404BBF */
+
 /* Dark 
 Navy blue #2E2F42 */
 
@@ -27,10 +30,13 @@ CLOUD #F4F4FD */
 :root {
     /* Colors */
     --primary-brand-color: #4D5AE5;
+    --color-hover-focus: #404BBF;
     --title-text-color: #2E2F42;
     --description-text-color: #434455;
     --background-light-color: #F4F4FD;
     --button-border-color: #E7E9FC;
+    --border-clients-color: #8E8F99;
+    --clients-color: #8E8F99;
 
     /* Body */
     --font-weight-body: 500;
@@ -45,7 +51,7 @@ CLOUD #F4F4FD */
 
     /* Buttons */
     --font-family-button: Roboto;
-    --font-weight-button: 600;
+    --font-weight-button: 500;
     --line-height-button: 1.5;
     --align-items-button: center;
     --letter-spacing-button: 0.04em;
@@ -141,7 +147,7 @@ body {
 
 .nav-title:hover,
 .nav-title:focus {
-    color: #434455;
+    color: var(--color-hover-focus);
 }
 
 /* Контакти */
@@ -228,10 +234,17 @@ body {
 .button-order {
     min-width: 170px;
     height: 51px;
-
     line-height: 1.19;
 
     padding: 16px 32px;
+
+    background-color: var(--primary-brand-color);
+    color: #ffffff;
+}
+
+.button-order:hover,
+.button-order:focus {
+    background-color: var(--color-hover-focus);
 }
 
 .button.primary {
@@ -378,16 +391,22 @@ img {
     padding: 0 16px 32px 16px;
 }
 
-.tralind-position {
+.tralind-link {
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     width: 40px;
     height: 40px;
+
     background-color: var(--primary-brand-color);
-    border-radius: 50%;
-    cursor: pointer;
+    fill: var(--background-light-color);
 }
 
-.team-list > .tralind-link {
-    display: block;
+.tralind-link:hover,
+.tralind-link:focus {
+    background-color: var(--color-hover-focus);
 }
 
 .tralind-icon {
@@ -396,8 +415,39 @@ img {
 }
 
 /* Customers */
-.section-name {
+.section-clients {
     padding-top: 130px;
+}
+
+.list-clients {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 0;
+}
+
+.link-client {
+    display: flex;
+    width: 168px;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--border-clients-color);
+    border-radius: 4px;
+
+    fill: var(--clients-color);
+}
+
+.link-client:hover,
+.link-client:focus {
+    border: 1px solid var(--color-hover-focus);
+    fill: var(--color-hover-focus);
+}
+
+.client {
+    width: 104px;
+    height: 56px;
 }
 
 /* Foother */
