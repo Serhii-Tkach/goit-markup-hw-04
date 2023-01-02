@@ -295,7 +295,7 @@ body {
 
 .actions {
     display: flex;
-    height: 112px;
+    padding: 24px 0;
     justify-content: center;
     align-items: center;
     background-color: var(--background-light-color);
@@ -395,12 +395,11 @@ img {
 
 .tralind-link {
     display: flex;
+    padding: 12px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
 
     background-color: var(--primary-brand-color);
     fill: var(--background-light-color);
@@ -430,8 +429,7 @@ img {
 
 .link-client {
     display: flex;
-    width: 168px;
-    height: 88px;
+    padding: 16px 32px;
     justify-content: center;
     align-items: center;
 
@@ -510,22 +508,31 @@ img {
 .our-company-list {
     display: flex;
     justify-content: space-between;
-    width: 208px;
-    height: 80px;
     padding-left: 0;
+}
+
+.link-position {
+    margin-right: 16px;
+}
+
+.link-position:last-child {
+    margin-right: 0;
 }
 
 .our-company-link {
     display: flex;
+    padding: 8px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
 
     background: rgba(255, 255, 255, 0.1);
     fill: var(--background-light-color);
+}
+
+.our-company-link:last-child {
+    margin-right: none;
 }
 
 .our-company-link:hover,
@@ -534,8 +541,8 @@ img {
 }
 
 .our-company-icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
 }
 
 /* Кнопки фільтрів */
